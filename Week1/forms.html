@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="formStyle.css" />
+</head>
+<body>
+    <h1>Form Elements Examples</h1>
+    <form>
+        <table>
+            <tr> <!--defines a row of cells in a table-->
+                <td> <!--defines a standard data cell within the HTML table <tr>-->
+                    <input type="text" id="firstName" placeholder="First Name">
+                    <input type="text" id="lastName" placeholder="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="newButton" value="New">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="trueFalse"> I am not a robot
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" id="registrationDate">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" id="userEMail" required placeholder="E-Mail Address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file" id="uploadedFile">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Do you like dogs? 
+                    <input type="radio" id="no" name="dogs"> No <!--Answer groups have to have the same name tag in order for them to have a single radio button selected-->
+                    <input type="radio" id="yes" name="dogs"> Yes
+                    <input type="radio" id="neutral" name="dogs"> Unsure
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="students">
+                        <option value="Ben">Ben</option>
+                        <option value="Chris">Chris</option>
+                        <option value="John">John</option>
+                        <option value="Josh">Josh</option>
+                        <option value="Theresa">Theresa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="" id="bigText" cols="30" rows="10">Hi there!</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
