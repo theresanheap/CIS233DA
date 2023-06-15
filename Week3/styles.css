@@ -1,0 +1,96 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    margin: 2%;
+    background: rgb(173, 216, 230);
+}
+
+.header-background {
+    background: rgb(255, 255, 255);
+    padding: 5%;
+    margin: 0 7%;
+}
+
+.photo-gallery {
+    max-width: 95%;
+    border: 7px solid rgb(231, 111, 20);
+}
+
+.photo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3%;
+    margin: 2.5% 5%;
+}
+
+#city-name {
+    color: rgb(231, 111, 20);
+}
+
+#temp-color {
+    color: rgb(119, 135, 152);
+}
+
+#credits {
+    color: rgb(119, 135, 152);
+}
+
+.embed-responsive {
+    margin: 5% 0;
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+    .header-background {
+        padding: 3%;
+        margin: 0 5%;
+    }
+
+    .photo-row {
+        margin: 2.5% 3%;
+    }
+
+    .embed-responsive {
+        margin: 3% 0;
+    }
+    
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header-background {
+        padding: 4%;
+        margin: 0 5%;
+    }
+
+    .photo-row {
+        margin: 2.5% 3%;
+    }
+
+    .embed-responsive {
+        margin: 3% 0;
+    }
+    
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header-background {
+        padding: 5%;
+        margin: 0 7%;
+    }
+
+    .photo-row {
+        margin: 2.5% 5%;
+    }
+}
