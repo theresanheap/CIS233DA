@@ -1,0 +1,108 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 2%;
+    background: rgb(173, 216, 230);
+}
+
+.header-background {
+    background: rgb(255, 255, 255);
+    padding: 5%;
+    margin: 0 7%;
+}
+
+.photo-gallery {
+    max-width: 95%;
+    border: 7px solid rgb(231, 111, 20);
+}
+
+.photo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3%;
+    margin: 2.5% 5%;
+}
+
+#city-name {
+    color: rgb(231, 111, 20);
+}
+
+#temp-color {
+    color: rgb(119, 135, 152);
+}
+
+#credits {
+    color: rgb(119, 135, 152);
+}
+
+.embed-responsive {
+    margin: 5% 0;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+@media (max-width: 600px) {
+    .header-background {
+        padding: 3%;
+        margin: 0 5%;
+    }
+
+    .photo-row {
+        margin: 2.5% 3%;
+    }
+
+    .embed-responsive {
+        margin: 3% 0;
+    }
+    
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header-background {
+        padding: 4%;
+        margin: 0 5%;
+    }
+
+    .photo-row {
+        margin: 2.5% 3%;
+    }
+
+    .embed-responsive {
+        margin: 3% 0;
+    }
+    
+    iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header-background {
+        padding: 5%;
+        margin: 0 7%;
+    }
+
+    .photo-row {
+        margin: 2.5% 5%;
+    }
+}
+
+/*Colors used: 
+- rgb(173, 216, 230) - Light blue
+- rgb(231, 111, 20) - Orange
+- rgb(255, 255, 255) - White
+- rgb(119, 135, 152) - Gray
+- rgb(0, 0, 0) - Black
+*/
