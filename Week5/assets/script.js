@@ -73,6 +73,22 @@ function updateWeatherInformation(city) {
           temperatureElement.innerHTML = 'N/A';
         }
 
+        if (data.main && data.main.humidity) {
+            const humidityElement = document.getElementById('humidity');
+            humidityElement.textContent = `Humidity: ${data.main.humidity}%`;
+          } else {
+            const humidityElement = document.getElementById('humidity');
+            humidityElement.textContent = 'Humidity: N/A';
+          }
+          if (data && data.wind && data.wind.speed) {
+            const windSpeedElement = document.getElementById('wind-speed');
+            windSpeedElement.textContent = `Wind Speed: ${data.wind.speed} m/s`;
+          } else {
+            const windSpeedElement = document.getElementById('wind-speed');
+            windSpeedElement.textContent = 'Wind Speed: N/A';
+          }
+                    
+
         if (data.weather && data.weather.length > 0 && data.weather[0].description) {
           const description = data.weather[0].description;
           const formattedDescription = description.charAt(0).toUpperCase() + description.slice(1).toLowerCase();
