@@ -130,22 +130,50 @@ function changeVideo(city) {
 
   changeVideo(selectedCity);
 
-function changeCity(city) {
-  if (city === 'chandler') {
-    updateWeatherInformation('chandler');
-  } else if (city === 'portland') {
-    updateWeatherInformation('portland');
-  } else if (city === 'seattle') {
-    updateWeatherInformation('seattle');
-  } else if (city === 'cheyenne') {
-    updateWeatherInformation('cheyenne');
-  } else if (city === 'victor') {
-    updateWeatherInformation('victor');
+  function changeImage(city) {
+    const cities = {
+      chandler: ['images/new-image1.jpg', 'images/new-image2.jpg', 'images/new-image3.jpg'],
+      portland: ['images/new-image4.jpg', 'images/new-image5.jpg', 'images/new-image6.jpg'],
+      seattle: ['images/new-image7.jpg', 'images/new-image8.jpg', 'images/new-image9.jpg'],
+      cheyenne: ['images/new-image10.jpg', 'images/new-image11.jpg', 'images/new-image12.jpg'],
+      victor: ['']
+    }; 
+    
+    if (city in cities) {
+      const images = cities[city];
+      const imageIds = ['firstImage', 'secondImage', 'thirdImage', "fourthImage"];
+      for (let i = 0; i < images.length && i < imageIds.length; i++) {
+        const imageElement = document.getElementById(imageIds[i]);
+        if (imageElement) {
+          imageElement.src = images[i];
+        }
+      }
+    }
+  
+  
   }
-}
-
-const cityDropdown = document.getElementById('city-dropdown');
-cityDropdown.addEventListener('change', (event) => {
-  const selectedCity = event.target.value;
-  changeCity(selectedCity);
-});
+  
+  function changeCity(city) {
+    if (city === 'chandler') {
+      updateWeatherInformation('chandler');
+      changeImage('chandler'); // Add this line
+    } else if (city === 'portland') {
+      updateWeatherInformation('portland');
+      changeImage('portland'); // Add this line
+    } else if (city === 'seattle') {
+      updateWeatherInformation('seattle');
+      changeImage('seattle'); // Add this line
+    } else if (city === 'cheyenne') {
+      updateWeatherInformation('cheyenne');
+      changeImage('cheyenne'); // Add this line
+    } else if (city === 'victor') {
+      updateWeatherInformation('victor');
+      changeImage('victor'); // Add this line
+    }
+  }
+  
+  const cityDropdown = document.getElementById('city-dropdown');
+  cityDropdown.addEventListener('change', (event) => {
+    const selectedCity = event.target.value;
+    changeCity(selectedCity);
+  });
