@@ -120,7 +120,7 @@ function changeVideo(city) {
     } else if (city === 'portland') {
       videoElement.src = 'https://www.youtube.com/embed/fU1AUy8dASc';
     } else if (city === 'seattle') {
-      videoElement.src = 'https://www.youtube.com/embed/lcEqZ-Uxi5I';
+      videoElement.src = 'https://www.youtube.com/embed/Xn6-FyVdjqA';
     } else if (city === 'cheyenne') {
       videoElement.src = 'https://www.youtube.com/embed/kYXXn3CjwAQ';
     } else if (city === 'victor') {
