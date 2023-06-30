@@ -131,25 +131,37 @@ function changeVideo(city) {
   changeVideo(selectedCity);
 
   function changeImage(city) {
-    const cities = {
-      chandler: ['images/new-image1.jpg', 'images/new-image2.jpg', 'images/new-image3.jpg'],
-      portland: ['images/new-image4.jpg', 'images/new-image5.jpg', 'images/new-image6.jpg'],
-      seattle: ['images/new-image7.jpg', 'images/new-image8.jpg', 'images/new-image9.jpg'],
-      cheyenne: ['images/new-image10.jpg', 'images/new-image11.jpg', 'images/new-image12.jpg'],
-      victor: ['']
-    }; 
-    
-    if (city in cities) {
-      const images = cities[city];
-      const imageIds = ['firstImage', 'secondImage', 'thirdImage', "fourthImage"];
-      for (let i = 0; i < images.length && i < imageIds.length; i++) {
-        const imageElement = document.getElementById(imageIds[i]);
-        if (imageElement) {
-          imageElement.src = images[i];
-        }
-      }
-    }
+    var firstImage = document.getElementById('firstImage');
+    var secondImage = document.getElementById('secondImage');
+    var thirdImage = document.getElementById('thirdImage');
+    var fourthImage = document.getElementById('fourthImage');
   
+    if (city === 'chandler') {
+      firstImage.src = 'images/chandler.jpg';
+      secondImage.src = 'images/chandler2.jpg';
+      thirdImage.src = 'images/chandler3.jpg';
+      fourthImage.src = 'images/chandler4.jpg';
+    } else if (city === 'portland') {
+      firstImage.src = 'images/portland.jpg';
+      secondImage.src = 'images/portland2.jpg';
+      thirdImage.src = 'images/portland3.jpg';
+      fourthImage.src = 'images/portland4.jpg';
+    } else if (city === 'seattle') {
+      firstImage.src = 'images/seattle.jpg';
+      secondImage.src = 'images/seattle2.jpg';
+      thirdImage.src = 'images/seattle3.jpg';
+      fourthImage.src = 'images/seattle4.jpg';
+    } else if (city === 'cheyenne') {
+      firstImage.src = 'images/cheyenne.jpg';
+      secondImage.src = 'images/cheyenne2.jpg';
+      thirdImage.src = 'images/cheyenne3.jpg';
+      fourthImage.src = 'images/cheyenne4.jpg';
+    } else if (city === 'victor') {
+      firstImage.src = 'images/victor-1.png';
+      secondImage.src = 'images/victor-2.png';
+      thirdImage.src = 'images/victor-3.jpeg';
+      fourthImage.src = 'images/victor-4.jpeg';
+    }
   
   }
   
