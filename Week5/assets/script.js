@@ -147,18 +147,18 @@ function changeVideo(city) {
       thirdImage.src = 'images/portland3.jpg';
       fourthImage.src = 'images/portland4.jpg';
     } else if (city === 'seattle') {
-      firstImage.src = 'images/seattle.jpg';
-      secondImage.src = 'images/seattle2.jpg';
-      thirdImage.src = 'images/seattle3.jpg';
-      fourthImage.src = 'images/seattle4.jpg';
+      firstImage.src = 'images/amazon.jpg';
+      secondImage.src = 'images/amazon.jpg';
+      thirdImage.src = 'images/amazon.jpg';
+      fourthImage.src = 'images/amazon.jpg';
     } else if (city === 'cheyenne') {
       firstImage.src = 'images/cheyenne.jpg';
       secondImage.src = 'images/cheyenne2.jpg';
       thirdImage.src = 'images/cheyenne3.jpg';
       fourthImage.src = 'images/cheyenne4.jpg';
     } else if (city === 'victor') {
-      firstImage.src = 'images/victor-1.png';
-      secondImage.src = 'images/victor-2.png';
+      firstImage.src = 'images/victor-1.jpg';
+      secondImage.src = 'images/victor-2.jpg';
       thirdImage.src = 'images/victor-3.jpeg';
       fourthImage.src = 'images/victor-4.jpeg';
     }
