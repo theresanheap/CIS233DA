@@ -137,20 +137,20 @@ function changeVideo(city) {
     var fourthImage = document.getElementById('fourthImage');
   
     if (city === 'chandler') {
-      firstImage.src = 'images/chandler.jpg';
-      secondImage.src = 'images/chandler2.jpg';
-      thirdImage.src = 'images/chandler3.jpg';
-      fourthImage.src = 'images/chandler4.jpg';
+      firstImage.src = 'images/chandler-1.jpg';
+      secondImage.src = 'images/chandler-2.jpg';
+      thirdImage.src = 'images/chandler-3.jpg';
+      fourthImage.src = 'images/chandler-4.jpg';
     } else if (city === 'portland') {
-      firstImage.src = 'images/portland.jpg';
-      secondImage.src = 'images/portland2.jpg';
-      thirdImage.src = 'images/portland3.jpg';
-      fourthImage.src = 'images/portland4.jpg';
+      firstImage.src = 'images/portland-1.jpg';
+      secondImage.src = 'images/portland-2.jpg';
+      thirdImage.src = 'images/portland-3.jpg';
+      fourthImage.src = 'images/portland-4.jpg';
     } else if (city === 'seattle') {
-      firstImage.src = 'images/amazon.jpg';
-      secondImage.src = 'images/amazon.jpg';
-      thirdImage.src = 'images/amazon.jpg';
-      fourthImage.src = 'images/amazon.jpg';
+      firstImage.src = 'images/seattle-1.jpg';
+      secondImage.src = 'images/seattle-2.jpg';
+      thirdImage.src = 'images/seattle-3.jpg';
+      fourthImage.src = 'images/seattle-4.jpg';
     } else if (city === 'cheyenne') {
       firstImage.src = 'images/cheyenne.jpg';
       secondImage.src = 'images/cheyenne2.jpg';
