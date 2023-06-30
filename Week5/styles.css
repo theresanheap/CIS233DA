@@ -11,11 +11,16 @@ body {
     background: rgb(255, 255, 255);
     padding: 5%;
     margin: 0 7%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .photo-gallery {
     max-width: 95%;
     border: 7px solid rgb(231, 111, 20);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 }
 
 .photo-row {
